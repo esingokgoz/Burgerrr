@@ -1,0 +1,41 @@
+<div class="container">
+    <img class="img-fluid"
+        src="https://hips.hearstapps.com/del.h-cdn.co/assets/17/22/1496164974-delish-veggie-burgers-2.jpg">
+
+    <h1>Eat-Da-Burger</h1>
+
+    <div class="row">
+        <div class="col-4">
+            <h2>Burgers to be eaten!</h2>
+            <ul>
+                {{#each burgers}}
+                {{#unless eaten}}
+                    {{> burger-block devour=false}}
+                {{/unless}}
+                {{/each}}
+            </ul>
+        </div>
+        <div class="col-4"></div>
+        <div class="col-4">
+            <h2>Eaten!</h2>
+            <ul>
+                {{#each burgers}}
+                {{#if eaten}}
+                {{> burger-block devour=true}}
+                {{/if}}
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+
+    <h2>Add a Burger</h2>
+    <form class="create-form">
+
+        <div class="form-group">
+            <label for="burger">Burger Name:</label>
+            <input type="text" id="burger" name="name">
+            <button class="btn btn-primary" type="submit">Add Burger</button>
+        </div>
+
+    </form>
+</div>
