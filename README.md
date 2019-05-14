@@ -6,9 +6,11 @@ Each burger in the waiting area also has a Devour it! button. When the user clic
 
 #### Getting Started
 - Clone the repository and install necessary files
+```
 ` $ git clone https://github.com/esingokgoz/Burgerrr.git
 ` cd Burgerrr
 ` npm install
+```
 
 #### Programming Languages
 - HMTL/CSS/Bootstrap
