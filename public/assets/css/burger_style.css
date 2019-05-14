@@ -1,9 +1,7 @@
 body {
     margin: 0;
     font-family: 'Shadows Into Light', cursive;    
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
+    font-size: 25px;
     color: #212529;
     text-align: left;
     background-image: url("../img/burger_bg.jpg")
@@ -18,14 +16,14 @@ h1 {
     margin: 10px;
 }
 
-.col-4 {
-    -ms-flex: 0 0 33.333333%;
-    flex: 0 0 33.333333%;
-    background: white;
-    text-transform: capitalize;
-    font-size: x-large;
-    padding: 10px;
+.burgers {
+    background-color: white;
     height: 300px;
+}
+
+.addburger {
+    background-color: white;
+    height: 120px;
 }
 
 .h2, h2 {
@@ -62,5 +60,3 @@ button, input {
     background-color: #009119;
     border-color: #009119;
 }
-
-
